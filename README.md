@@ -37,12 +37,16 @@ Setup:
 I used DevTools/Timeline to see frames per sec while scrolling or resizing the pizzas.
 
 Modifications:
+
 1. In function changePizzaSizes(), removed dx and newwidth out of the for loop. These
 values are not dependent on the loop iteration and are staying the same. Also use
 getElementsByClassName() instead of querySelectorAll() inside the loop.
+
 2. In function updatePositions(), use getElementsByClass() instead of querySelectorAll().
+
 3. In function updatePositions(), create 5 separate values of phase outside of for loop (sinValue)
 and assign the correct on based on the result of i%5.
+
 4. In function updatePositions(), added backface-visibility: hidden to each pizza so that it is in its
 own layer as recommended by Mark during office hours.
 
@@ -52,6 +56,6 @@ Frames per second values when scrolling are under 60 fps.
 
 Bonus:
 ------
-I used Grunt to minified css and js files. I also used it compress all images, except for pizzeria.jpg.
+I used Grunt to minify css and js files. I also used it compress all images, except for pizzeria.jpg.
 All html files were also minified. All files are stored in a separate directory called build. I tested the build
 version. PageSpeed Insights and Chrome/Dev Tools gave me the same results as mentioned above.
