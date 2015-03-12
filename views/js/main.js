@@ -509,10 +509,10 @@ function updatePositions() {
   var items = document.getElementsByClassName('mover');
 
   var sinValue0 = 100*(Math.sin(document.body.scrollTop / 1250));
-  var sinValue1 = 100* (Math.sin(document.body.scrollTop / 1250) + 1);
-  var sinValue2 = 100* (Math.sin(document.body.scrollTop / 1250) + 2);
-  var sinValue3 = 100* (Math.sin(document.body.scrollTop / 1250) + 3);
-  var sinValue4 = 100* (Math.sin(document.body.scrollTop / 1250) + 4);
+  var sinValue1 = 100* (Math.sin((document.body.scrollTop / 1250) + 1));
+  var sinValue2 = 100* (Math.sin((document.body.scrollTop / 1250) + 2));
+  var sinValue3 = 100* (Math.sin((document.body.scrollTop / 1250) + 3));
+  var sinValue4 = 100* (Math.sin((document.body.scrollTop / 1250) + 4));
 
   var phase = sinValue0;
 
